@@ -3,7 +3,7 @@
 client_id = "22e57c963cb031cee6759905b7172d7c"
 name = "preproduction-discount"
 handle = "preproduction-discount"
-application_url = "https://preproduction-app.vercel.app/"
+application_url = "https://preproduction-discount-remix-app.vercel.app/"
 embedded = true
 
 [build]
@@ -23,7 +23,7 @@ uri = "/webhooks/app"
 scopes = "read_discounts, write_discounts, read_customers, read_products, read_orders"
 
 [auth]
-redirect_urls = [ "https://preproduction-app.vercel.app/auth/callback" ]
+redirect_urls = [ "https://preproduction-discount-remix-app.vercel.app/auth/callback" ]
 
 [pos]
 embedded = false
