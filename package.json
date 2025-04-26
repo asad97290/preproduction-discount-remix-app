@@ -14,7 +14,9 @@
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "shopify": "shopify",
     "graphql-codegen": "graphql-codegen",
-    "vite": "vite"
+    "vite": "vite",
+    "setup": "prisma generate && prisma migrate deploy",
+    "prisma": "prisma"
   },
   "type": "module",
   "engines": {
