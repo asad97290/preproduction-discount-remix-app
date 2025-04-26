@@ -2,7 +2,7 @@
   "name": "preproduction-discount",
   "private": true,
   "scripts": {
-    "build": "remix vite:build",
+    "build": "setup && remix vite:build",
     "dev": "shopify app dev",
     "config:link": "shopify app config link",
     "generate": "shopify app generate",
@@ -15,7 +15,7 @@
     "shopify": "shopify",
     "graphql-codegen": "graphql-codegen",
     "vite": "vite",
-    "setup": "prisma generate && prisma migrate deploy",
+    "setup": "prisma generate && prisma db push",
     "prisma": "prisma"
   },
   "type": "module",
