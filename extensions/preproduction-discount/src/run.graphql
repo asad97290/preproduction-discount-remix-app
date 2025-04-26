@@ -1,0 +1,23 @@
+query RunInput {
+  cart {
+    buyerIdentity {
+      customer {
+        metafield(namespace: "custom", key: "wholesale_tiers") {
+          value
+        }
+      }
+    }
+    lines {
+      id
+      quantity
+      merchandise {
+        ... on ProductVariant {
+          id
+          metafield(namespace: "custom", key: "preproduction_note") {
+            value
+          }
+        }
+      }
+    }
+  }
+}
